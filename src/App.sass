@@ -1,0 +1,37 @@
+body
+    display: flex
+    flex-direction: column
+
+#root
+    display: flex
+    font-size: 20px
+    flex: 1
+
+.main-container
+    display: flex
+    flex-direction: column
+    flex: 1
+    justify-content: space-between
+
+.heading
+    padding: 50px 20px 0 20px
+    transition: .1s linear
+    text-align: center
+    font-size: 100px
+
+    &:not(.visible)
+        opacity: 0
+
+.emoji-grid
+    padding: 0 20px 50px 20px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    gap: 5px
+    justify-content: space-around
+
+    .emojiButton
+        padding: 20px 0px
+        display: flex
+        justify-content: center
+        background: rgba(255, 255, 255, 0.05)
+        border-radius: 4px
